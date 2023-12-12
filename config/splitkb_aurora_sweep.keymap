@@ -34,63 +34,96 @@
         };
     };
 
+    behaviors {
+        f1_2: f1_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "F1_2";
+            #binding-cells = <0>;
+            bindings = <&kp F1>, <&kp F2>;
+        };
+
+        f3_4: f3_4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "F3_4";
+            #binding-cells = <0>;
+            bindings = <&kp F3>, <&kp F4>;
+        };
+
+        f5_6: f5_6 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "F5_6";
+            #binding-cells = <0>;
+            bindings = <&kp F5>, <&kp F6>;
+        };
+
+        f7_8: f7_8 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "F7_8";
+            #binding-cells = <0>;
+            bindings = <&kp F7>, <&kp F8>;
+        };
+
+        f9_10: f9_10 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "F9_10";
+            #binding-cells = <0>;
+            bindings = <&kp F9>, <&kp F10>;
+        };
+
+        f11_12: f11_12 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "F11_12";
+            #binding-cells = <0>;
+            bindings = <&kp F11>, <&kp F12>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp Q           &kp W          &kp F        &kp P        &kp B    &kp J  &kp L        &kp U        &kp Y         &kp SQT
-&mt LEFT_GUI A  &mt LALT R     &mt LCTRL S  &mt LSHFT T  &kp G    &kp M  &mt LSHFT N  &mt LCTRL E  &mt LALT I    &mt LGUI O
-&kp Z           &mt RALT X     &mt SPACE C  &kp D        &kp V    &kp K  &kp H        &kp COMMA    &mt RALT DOT  &kp SLASH
-&lt NAV SPACE   &lt MOUSE TAB                                                                      &lt SYM RET   &lt NUM BSPC
+&kp Q           &kp W       &kp F        &kp P        &kp B    &kp J  &kp L        &kp U        &kp Y         &kp SQT
+&mt LEFT_GUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G    &kp M  &mt LSHFT N  &mt LCTRL E  &mt LALT I    &mt LGUI O
+&kp Z           &mt RALT X  &mt SPACE C  &kp D        &kp V    &kp K  &kp H        &kp COMMA    &mt RALT DOT  &kp SLASH
+&lt 3 SPACE     &lt 1 TAB                                                                       &lt 2 RET     &lt 4 BSPC
             >;
         };
 
         num_layer {
             bindings = <
-&kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET    &none       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none         &none
-&kp BACKSLASH     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL            &caps_word  &kp RIGHT_SHIFT   &kp LEFT_CONTROL   &kp LEFT_ALT  &kp RIGHT_GUI
-&kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SEMICOLON        &kp MINUS   &kp GRAVE         &kp LBKT           &kp RBKT      &kp DEL
-&kp N0            &kp MINUS                                                                                                       &none         &none
+&none         &none         &kp LG(NUMBER_4)        &kp LG(N5)                   &kp LG(NUMBER_1)    &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET
+&kp LEFT_GUI  &kp LEFT_ALT  &mt LCTRL LG(NUMBER_6)  &mt LEFT_SHIFT LG(NUMBER_7)  &kp LG(NUMBER_2)    &kp EQUAL         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp BACKSLASH
+&none         &none         &kp LG(N8)              &kp LG(N9)                   &kp LG(NUMBER_3)    &kp SEMICOLON     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp GRAVE
+&none         &none                                                                                                                                &kp MINUS     &kp N0
             >;
         };
 
         sym_layer {
             bindings = <
-&kp BANG              &kp ATSN               &kp HASH   &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp CRRT           &kp AMPS           &kp RA(LEFT_BRACKET)  &kp LPRN  &kp RPRN
-&kp HASH              &kp QMARK              &kp FSLH   &kp LEFT_BRACE    &kp RIGHT_BRACE      &kp RA(SEMICOLON)  &kp RA(SEMICOLON)  &kp RA(SQT)           &kp RBRC  &kp BKSP
-&kp LSFT              &kp KPLS               &kp GRAVE  &kp AT_SIGN       &kp EXCLAMATION      &kp UNDER          &kp LEFT           &kp DOWN              &kp UP    &kp RIGHT
-&kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                                                                                &none     &none
+&kp LESS_THAN         &kp GREATER_THAN       &kp HASH    &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp CRRT           &kp AMPS           &kp RA(LEFT_BRACKET)  &kp LPRN  &kp RPRN
+&kp HASH              &kp QMARK              &kp PIPE    &kp LEFT_BRACE    &kp RIGHT_BRACE      &kp RA(SEMICOLON)  &kp RA(SEMICOLON)  &kp RA(SQT)           &kp RBRC  &kp BKSP
+&kp BACKSLASH         &kp CARET              &kp DOLLAR  &kp AT_SIGN       &kp EXCLAMATION      &kp UNDER          &kp LEFT           &kp DOWN              &kp UP    &kp RIGHT
+&kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                                                                                 &none     &none
             >;
         };
 
         nav {
             bindings = <
-&none     &none     &none      &none      &none    &kp LC(Z)  &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Y)
-&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &caps_word
-&none     &kp RALT  &none      &none      &none    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp INS
-&none     &none                                                                     &kp RET    &kp BSPC
+&kp LC(Y)  &kp LC(X)  &kp LC(C)  &kp LC(V)       &kp LC(Z)     &kp LC(Z)  &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Y)
+&kp LGUI   &kp LALT   &kp LCTRL  &kp LEFT_SHIFT  &kp ESCAPE    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &caps_word
+&none      &kp RALT   &none      &none           &none         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp INS
+&none      &none                                                                                &kp RET    &kp BSPC
             >;
         };
 
         mouse {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans         &trans             &trans      &trans
-&kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &trans  &kp LC(PG_UP)  &kp LC(PAGE_DOWN)  &kp K_MUTE  &trans
-&bt BT_CLR    &bt BT_NXT    &bt BT_PRV    &kp F6        &kp F7          &trans  &kp PG_DN      &kp K_VOL_DN       &trans      &trans
-&trans        &trans                                                                                              &trans      &trans
+&f1_2   &f3_4    &kp LC(PLUS)   &kp K_SCROLL_UP    &kp C_VOLUME_UP      &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4
+&f5_6   &f7_8    &kp LC(MINUS)  &kp K_SCROLL_DOWN  &kp C_VOLUME_DOWN    &kp ESCAPE    &kp LC(PG_DN)  &kp LC(PG_DN)  &kp LEFT_ALT  &kp LEFT_GUI
+&f9_10  &f11_12  &kp F9         &caps_word         &kp K_MUTE           &caps_word    &none          &none          &trans        &bt BT_CLR
+&trans  &trans                                                                                                      &trans        &trans
             >;
-        };
-
-        fun {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &kp F1  &kp F2  &kp F3  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans                                                    &trans  &trans
-            >;
-
-            label = "fun";
         };
     };
 };
