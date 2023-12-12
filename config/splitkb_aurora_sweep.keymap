@@ -78,6 +78,15 @@
         };
     };
 
+    macros {
+        quit_vim: quit_vim {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp COLON &kp Q &kp A &kp RET>;
+            label = "QUIT_VIM";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -119,10 +128,10 @@
 
         scroll {
             bindings = <
-&f1_2      &f3_4    &kp LC(PLUS)   &kp K_SCROLL_UP    &kp C_VOLUME_UP      &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4
-&f5_6      &f7_8    &kp LC(MINUS)  &kp K_SCROLL_DOWN  &kp C_VOLUME_DOWN    &kp ESCAPE    &kp LC(PG_DN)  &kp LC(PG_DN)  &kp LEFT_ALT  &kp LEFT_GUI
-&f9_10     &f11_12  &kp F9         &caps_word         &kp K_MUTE           &caps_word    &none          &none          &trans        &bt BT_CLR
-&kp SPACE  &kp TAB                                                                                                     &trans        &trans
+&f1_2      &f3_4    &kp LC(K_SCROLL_UP)  &kp LC(PLUS)              &kp C_VOLUME_UP      &none         &none                    &kp LEFT_BRACKET   &none         &bt BT_CLR
+&f5_6      &f7_8    &kp K_SCROLL_DOWN    &mt LEFT_SHIFT LC(MINUS)  &kp C_VOLUME_DOWN    &kp ESCAPE    &mt LC(PG_DN) SEMICOLON  &mt LC(PG_UP) SQT  &kp LEFT_ALT  &kp LEFT_GUI
+&f9_10     &f11_12  &quit_vim            &caps_word                &kp K_MUTE           &bt BT_SEL 0  &bt BT_SEL 1             &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4
+&kp SPACE  &kp TAB                                                                                                                                &trans        &trans
             >;
         };
     };
