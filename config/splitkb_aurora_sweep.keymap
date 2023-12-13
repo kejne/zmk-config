@@ -18,8 +18,9 @@
     //  flavor = "tap-preferred";
     // tapping_term_ms = <200>;
 
-    flavor = "balanced";
-    hold-trigger-key-positions = <>;
+    flavor = "tap-preferred";
+    require-prior-idle-ms = <125>;
+    quick-tap-ms = <200>;
 };
 
 / {
