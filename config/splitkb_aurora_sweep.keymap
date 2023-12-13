@@ -17,6 +17,9 @@
 &mt {
     //  flavor = "tap-preferred";
     // tapping_term_ms = <200>;
+
+    flavor = "balanced";
+    hold-trigger-key-positions = <>;
 };
 
 / {
@@ -101,17 +104,17 @@
 
         num {
             bindings = <
-&none         &none         &kp LG(NUMBER_4)        &kp LG(N5)                   &kp LG(NUMBER_1)    &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET
-&kp LEFT_GUI  &kp LEFT_ALT  &mt LCTRL LG(NUMBER_6)  &mt LEFT_SHIFT LG(NUMBER_7)  &kp LG(NUMBER_2)    &kp EQUAL         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp BACKSLASH
-&none         &none         &kp LG(N8)              &kp LG(N9)                   &kp LG(NUMBER_3)    &kp SEMICOLON     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp GRAVE
-&none         &none                                                                                                                                &kp MINUS     &kp N0
+&none         &none         &kp LG(NUMBER_4)        &kp LG(N5)                   &kp LG(NUMBER_1)    &kp LEFT_BRACKET  &kp N7                   &kp N8        &kp N9                 &kp RIGHT_BRACKET
+&kp LEFT_GUI  &kp LEFT_ALT  &mt LCTRL LG(NUMBER_6)  &mt LEFT_SHIFT LG(NUMBER_7)  &kp LG(NUMBER_2)    &kp EQUAL         &mt LEFT_SHIFT NUMBER_3  &mt LCTRL N5  &mt LEFT_ALT NUMBER_6  &mt LEFT_GUI BACKSLASH
+&none         &none         &kp LG(N8)              &kp LG(N9)                   &kp LG(NUMBER_3)    &kp SEMICOLON     &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3           &kp GRAVE
+&none         &none                                                                                                                                           &kp MINUS              &kp N0
             >;
         };
 
         sym {
             bindings = <
 &kp LESS_THAN         &kp GREATER_THAN       &kp HASH    &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &none       &none                         &kp RA(LEFT_BRACKET)  &none         &none
-&kp HASH              &kp QMARK              &kp PIPE    &kp LEFT_BRACE    &kp RIGHT_BRACE      &kp ESCAPE  &mt LEFT_SHIFT RA(SEMICOLON)  &mt LCTRL RA(SQT)     &kp LEFT_ALT  &kp LEFT_GUI
+&kp HASH              &kp QMARK              &kp PLUS    &kp LEFT_BRACE    &kp RIGHT_BRACE      &kp ESCAPE  &mt LEFT_SHIFT RA(SEMICOLON)  &mt LCTRL RA(SQT)     &kp LEFT_ALT  &kp LEFT_GUI
 &kp BACKSLASH         &kp CARET              &kp DOLLAR  &kp AT_SIGN       &kp EXCLAMATION      &none       &none                         &none                 &none         &none
 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                                                                                     &none         &none
             >;
@@ -128,10 +131,10 @@
 
         scroll {
             bindings = <
-&f1_2      &f3_4    &kp LC(K_SCROLL_UP)  &kp LC(PLUS)              &kp C_VOLUME_UP      &none         &none                    &kp LEFT_BRACKET   &none         &bt BT_CLR
-&f5_6      &f7_8    &kp K_SCROLL_DOWN    &mt LEFT_SHIFT LC(MINUS)  &kp C_VOLUME_DOWN    &kp ESCAPE    &mt LC(PG_DN) SEMICOLON  &mt LC(PG_UP) SQT  &kp LEFT_ALT  &kp LEFT_GUI
-&f9_10     &f11_12  &quit_vim            &caps_word                &kp K_MUTE           &bt BT_SEL 0  &bt BT_SEL 1             &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4
-&kp SPACE  &kp TAB                                                                                                                                &trans        &trans
+&f1_2      &f3_4    &kp LC(C_BRIGHTNESS_INC)  &kp LC(PLUS)                   &kp C_VOLUME_UP      &none         &none                    &kp LEFT_BRACKET   &none         &bt BT_CLR
+&f5_6      &f7_8    &kp C_BRIGHTNESS_DEC      &mt LEFT_SHIFT LC(UNDERSCORE)  &kp C_VOLUME_DOWN    &kp ESCAPE    &mt LS(PG_DN) SEMICOLON  &mt LS(PG_UP) SQT  &kp LEFT_ALT  &kp LEFT_GUI
+&f9_10     &f11_12  &quit_vim                 &caps_word                     &kp K_MUTE           &bt BT_SEL 0  &bt BT_SEL 1             &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4
+&kp SPACE  &kp TAB                                                                                                                                          &trans        &trans
             >;
         };
     };
