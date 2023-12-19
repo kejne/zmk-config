@@ -36,6 +36,16 @@
             bindings = <&kp DEL>;
             key-positions = <33 32>;
         };
+
+        num_lock {
+            bindings = <&tog 1>;
+            key-positions = <25 29>;
+        };
+
+        nav_lock {
+            bindings = <&tog 3>;
+            key-positions = <20 24>;
+        };
     };
 
     behaviors {
