@@ -115,10 +115,10 @@
 
         num {
             bindings = <
-&none         &none         &kp LG(NUMBER_4)        &kp LG(N5)                   &kp LG(NUMBER_1)    &kp LEFT_BRACKET  &kp N7                   &kp N8        &kp N9                 &kp RIGHT_BRACKET
-&kp LEFT_GUI  &kp LEFT_ALT  &mt LCTRL LG(NUMBER_6)  &mt LEFT_SHIFT LG(NUMBER_7)  &kp LG(NUMBER_2)    &kp EQUAL         &mt LEFT_SHIFT NUMBER_4  &mt LCTRL N5  &mt LEFT_ALT NUMBER_6  &mt LEFT_GUI BACKSLASH
-&none         &none         &kp LG(N8)              &kp LG(N9)                   &kp LG(NUMBER_3)    &kp SEMICOLON     &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3           &kp GRAVE
-&none         &none                                                                                                                                           &kp MINUS              &kp N0
+&none         &none         &kp LG(NUMBER_4)        &kp LG(N5)                   &kp LG(NUMBER_1)    &kp AMPERSAND  &kp N7                   &kp N8        &kp N9                 &kp PERCENT
+&kp LEFT_GUI  &kp LEFT_ALT  &mt LCTRL LG(NUMBER_6)  &mt LEFT_SHIFT LG(NUMBER_7)  &kp LG(NUMBER_2)    &kp EQUAL      &mt LEFT_SHIFT NUMBER_4  &mt LCTRL N5  &mt LEFT_ALT NUMBER_6  &mt LEFT_GUI BACKSLASH
+&none         &none         &kp LG(N8)              &kp LG(N9)                   &kp LG(NUMBER_3)    &kp SEMICOLON  &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3           &kp GRAVE
+&none         &none                                                                                                                                        &kp MINUS              &kp N0
             >;
         };
 
@@ -133,10 +133,10 @@
 
         nav {
             bindings = <
-&kp LC(Y)  &kp LC(X)  &kp LC(C)      &kp LC(V)       &kp LC(Z)     &kp LC(A)  &kp LC(LS(V))  &kp LC(LS(C))  &kp LC(X)  &kp LC(Y)
-&kp LGUI   &kp LALT   &kp LCTRL      &kp LEFT_SHIFT  &kp ESCAPE    &kp LEFT   &kp DOWN       &kp UP         &kp RIGHT  &caps_word
-&none      &kp RALT   &kp LS(LC(C))  &kp LS(LC(V))   &none         &kp HOME   &kp PG_DN      &kp PG_UP      &kp END    &kp INS
-&none      &none                                                                                            &kp RET    &kp BSPC
+&kp LC(Y)  &kp LC(X)  &kp LC(C)  &kp LC(V)       &kp LC(A)     &kp LC(Z)  &kp LC(LS(V))  &kp LC(LS(C))  &kp LC(X)  &kp LC(Y)
+&kp LGUI   &kp LALT   &kp LCTRL  &kp LEFT_SHIFT  &kp ESCAPE    &kp LEFT   &kp DOWN       &kp UP         &kp RIGHT  &caps_word
+&none      &kp RALT   &kp SPACE  &none           &none         &kp HOME   &kp PG_DN      &kp PG_UP      &kp END    &kp INS
+&none      &none                                                                                        &kp RET    &kp BSPC
             >;
         };
 
