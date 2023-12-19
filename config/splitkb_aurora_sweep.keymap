@@ -124,8 +124,8 @@
 
         sym {
             bindings = <
-&kp LESS_THAN         &kp GREATER_THAN       &kp HASH    &kp LEFT_BRACKET           &kp RIGHT_BRACKET    &none       &none                         &kp RA(LEFT_BRACKET)  &none         &none
-&kp HASH              &kp QMARK              &kp PLUS    &mt LEFT_SHIFT LEFT_BRACE  &kp RIGHT_BRACE      &kp ESCAPE  &mt LEFT_SHIFT RA(SEMICOLON)  &mt LCTRL RA(SQT)     &kp LEFT_ALT  &kp LEFT_GUI
+&kp PIPE              &kp TILDE              &kp HASH    &kp LEFT_BRACKET           &kp RIGHT_BRACKET    &none       &none                         &kp RA(LEFT_BRACKET)  &none         &none
+&kp COLON             &kp ASTERISK           &kp PLUS    &mt LEFT_SHIFT LEFT_BRACE  &kp RIGHT_BRACE      &kp ESCAPE  &mt LEFT_SHIFT RA(SEMICOLON)  &mt LCTRL RA(SQT)     &kp LEFT_ALT  &kp LEFT_GUI
 &kp BACKSLASH         &kp CARET              &kp DOLLAR  &kp AT_SIGN                &kp EXCLAMATION      &none       &none                         &none                 &none         &none
 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                                                                                              &none         &none
             >;
@@ -133,10 +133,10 @@
 
         nav {
             bindings = <
-&kp LC(Y)  &kp LC(X)  &kp LC(C)      &kp LC(V)       &kp LC(Z)     &kp LC(Z)  &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Y)
-&kp LGUI   &kp LALT   &kp LCTRL      &kp LEFT_SHIFT  &kp ESCAPE    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &caps_word
-&none      &kp RALT   &kp LS(LC(C))  &kp LS(LC(V))   &none         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp INS
-&none      &none                                                                                    &kp RET    &kp BSPC
+&kp LC(Y)  &kp LC(X)  &kp LC(C)      &kp LC(V)       &kp LC(Z)     &kp LC(A)  &kp LC(LS(V))  &kp LC(LS(C))  &kp LC(X)  &kp LC(Y)
+&kp LGUI   &kp LALT   &kp LCTRL      &kp LEFT_SHIFT  &kp ESCAPE    &kp LEFT   &kp DOWN       &kp UP         &kp RIGHT  &caps_word
+&none      &kp RALT   &kp LS(LC(C))  &kp LS(LC(V))   &none         &kp HOME   &kp PG_DN      &kp PG_UP      &kp END    &kp INS
+&none      &none                                                                                            &kp RET    &kp BSPC
             >;
         };
 
