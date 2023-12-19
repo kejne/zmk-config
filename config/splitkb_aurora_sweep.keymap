@@ -123,10 +123,10 @@
 
         nav {
             bindings = <
-&kp LC(Y)  &kp LC(X)  &kp LC(C)  &kp LC(V)       &kp LC(Z)     &kp LC(Z)  &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Y)
-&kp LGUI   &kp LALT   &kp LCTRL  &kp LEFT_SHIFT  &kp ESCAPE    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &caps_word
-&none      &kp RALT   &none      &none           &none         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp INS
-&none      &none                                                                                &kp RET    &kp BSPC
+&kp LC(Y)  &kp LC(X)  &kp LC(C)      &kp LC(V)       &kp LC(Z)     &kp LC(Z)  &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Y)
+&kp LGUI   &kp LALT   &kp LCTRL      &kp LEFT_SHIFT  &kp ESCAPE    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &caps_word
+&none      &kp RALT   &kp LS(LC(C))  &kp LS(LC(V))   &none         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp INS
+&none      &none                                                                                    &kp RET    &kp BSPC
             >;
         };
 
