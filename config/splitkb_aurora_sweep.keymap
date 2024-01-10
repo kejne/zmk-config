@@ -95,6 +95,16 @@
             #binding-cells = <0>;
             bindings = <&kp F11>, <&kp F12>;
         };
+
+        slow_mod: slow_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SLOW_MOD";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <750>;
+            flavor = "balanced";
+        };
     };
 
     macros {
@@ -125,10 +135,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W       &kp F        &kp P        &kp B    &kp J  &kp L        &kp U        &kp Y         &kp SQT
-&mt LEFT_GUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G    &kp M  &mt LSHFT N  &mt LCTRL E  &mt LALT I    &mt LGUI O
-&kp Z           &mt RALT X  &mt SPACE C  &kp D        &kp V    &kp K  &kp H        &kp COMMA    &mt RALT DOT  &kp SLASH
-&lt 3 SPACE     &lt 1 TAB                                                                       &lt 2 RET     &lt 4 BSPC
+&kp Q                 &kp W             &kp F              &kp P        &kp B    &kp J  &kp L        &kp U        &kp Y             &kp SQT
+&slow_mod LEFT_GUI A  &slow_mod LALT R  &mt LCTRL S        &mt LSHFT T  &kp G    &kp M  &mt LSHFT N  &mt LCTRL E  &slow_mod LALT I  &slow_mod LEFT_GUI O
+&kp Z                 &kp X             &slow_mod SPACE C  &kp D        &kp V    &kp K  &kp H        &kp COMMA    &kp PERIOD        &kp SLASH
+&lt 3 SPACE           &lt 1 TAB                                                                                   &lt 2 RET         &lt 4 BSPC
             >;
         };
 
