@@ -128,13 +128,6 @@
     };
 
     macros {
-        quit_vim: quit_vim {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp COLON &kp Q &kp A &kp RET>;
-            label = "QUIT_VIM";
-        };
-
         increase_window: increase_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -180,7 +173,7 @@
             >;
         };
 
-        scroll {
+        misc {
             bindings = <
 &f1_2      &f3_4    &kp C_BRIGHTNESS_INC  &kp LC(PLUS)                   &kp C_VOLUME_UP      &caps_word  &none          &kp LEFT_BRACKET  &none         &none
 &f5_6      &f7_8    &kp C_BRIGHTNESS_DEC  &mt LEFT_SHIFT LC(UNDERSCORE)  &kp C_VOLUME_DOWN    &kp ESCAPE  &kp SEMICOLON  &kp SQT           &kp LEFT_ALT  &kp LEFT_GUI
