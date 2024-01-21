@@ -125,6 +125,15 @@
             tapping-term-ms = <1000>;
             flavor = "tap-preferred";
         };
+
+        bluetooth_tap: bluetooth_tap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BLUETOOTH_TAP";
+            #binding-cells = <0>;
+            bindings = <&bt BT_NXT>, <&none>, <&bt BT_CLR>;
+
+            tapping-term-ms = <500>;
+        };
     };
 
     macros {
@@ -168,7 +177,7 @@
             bindings = <
 &kp TILDE      &kp GRAVE     &kp HASH    &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp HOME        &kp PG_DN  &kp PG_UP     &kp END   &none
 &kp PIPE       &kp ASTERISK  &kp PLUS    &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp LEFT_ARROW  &kp DOWN   &kp UP_ARROW  &kp DOWN  &kp LEFT_GUI
-&kp BACKSLASH  &kp CARET     &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none           &none      &none         &none     &none
+&kp BACKSLASH  &kp CARET     &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none           &none      &none         &none     &bluetooth_tap
 &kp SPACE      &kp TAB                                                                                                           &none     &none
             >;
         };
