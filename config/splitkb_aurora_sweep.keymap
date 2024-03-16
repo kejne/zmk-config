@@ -167,10 +167,10 @@
 
         num {
             bindings = <
-&none         &none         &kp LG(NUMBER_4)        &kp LG(N5)                   &kp LG(NUMBER_1)    &kp EQUAL  &kp N7                   &kp N8        &kp N9                 &kp N0
-&kp LEFT_GUI  &kp LEFT_ALT  &mt LCTRL LG(NUMBER_6)  &mt LEFT_SHIFT LG(NUMBER_7)  &kp LG(NUMBER_2)    &kp MINUS  &mt LEFT_SHIFT NUMBER_4  &mt LCTRL N5  &mt LEFT_ALT NUMBER_6  &mt LEFT_GUI BACKSLASH
-&none         &none         &kp LG(N8)              &kp LG(N9)                   &kp LG(NUMBER_3)    &kp SQT    &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3           &kp GRAVE
-&none         &none                                                                                                                                    &kp ENTER              &kp BACKSPACE
+&kp NUMBER_1  &kp NUMBER_2        &kp NUMBER_3            &kp NUMBER_4                  &kp N5           &kp NUMBER_6  &kp N7               &kp N8              &kp N9              &kp N0
+&kp LEFT_GUI  &mt LEFT_GUI GRAVE  &mt LCTRL LEFT_BRACKET  &mt LEFT_SHIFT RIGHT_BRACKET  &kp SQT          &kp LEFT      &mt LEFT_SHIFT DOWN  &mt LCTRL UP_ARROW  &mt LEFT_GUI RIGHT  &mt LEFT_GUI BACKSLASH
+&none         &none               &kp MINUS               &kp EQUAL                     &kp BACKSLASH    &kp HOME      &kp PAGE_DOWN        &kp PAGE_UP         &kp END             &kp GRAVE
+&none         &none                                                                                                                                             &kp ENTER           &kp BACKSPACE
             >;
         };
 
