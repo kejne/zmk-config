@@ -33,24 +33,9 @@
             key-positions = <30 31>;
         };
 
-        delete_thumb {
-            bindings = <&kp DEL>;
+        esc2 {
+            bindings = <&kp ESC>;
             key-positions = <33 32>;
-        };
-
-        num_lock {
-            bindings = <&tog 1>;
-            key-positions = <29 25>;
-        };
-
-        nav_lock {
-            bindings = <&tog 0>;
-            key-positions = <20 24>;
-        };
-
-        fun_combo {
-            bindings = <&tog 0>;
-            key-positions = <9 19 29>;
         };
     };
 
