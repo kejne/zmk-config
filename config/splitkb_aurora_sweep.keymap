@@ -93,8 +93,9 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <500>;
-            flavor = "balanced";
+            tapping-term-ms = <400>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <200>;
         };
 
         long_hold_bt: long_hold_bt {
@@ -126,11 +127,11 @@
             tapping-term-ms = <500>;
         };
 
-        jj: jj {
+        uu: uu {
             compatible = "zmk,behavior-tap-dance";
-            label = "JJ";
+            label = "UU";
             #binding-cells = <0>;
-            bindings = <&mt LEFT_SHIFT J>, <&kp ESCAPE>;
+            bindings = <&kp U>, <&kp ESCAPE>;
         };
     };
 
@@ -155,10 +156,10 @@
 
         default_layer {
             bindings = <
-&slow_mod LG(NUMBER_1) Q  &kp W                 &kp E        &kp R        &kp T    &kp Y  &kp U  &kp I        &kp O                 &kp P
-&slow_mod LEFT_ALT A      &slow_mod LEFT_GUI S  &mt LCTRL D  &mt LSHFT F  &kp G    &kp H  &jj    &mt LCTRL K  &slow_mod LEFT_GUI L  &slow_mod LEFT_ALT SEMICOLON
-&kp Z                     &kp X                 &kp C        &kp V        &kp B    &kp N  &kp M  &kp COMMA    &kp PERIOD            &kp SLASH
-&kp SPACE                 &lt 1 TAB                                                                           &lt 1 RET             &kp BACKSPACE
+&slow_mod LG(NUMBER_1) Q  &kp W                 &kp E        &kp R        &kp T      &kp Y    &uu               &kp I        &kp O                 &kp P
+&slow_mod LEFT_ALT A      &slow_mod LEFT_GUI S  &mt LCTRL D  &mt LSHFT F  &lt 2 G    &lt 2 H  &mt LEFT_SHIFT J  &mt LCTRL K  &slow_mod LEFT_GUI L  &slow_mod LEFT_ALT SEMICOLON
+&kp Z                     &kp X                 &kp C        &kp V        &kp B      &kp N    &kp M             &kp COMMA    &kp PERIOD            &kp SLASH
+&kp SPACE                 &lt 1 TAB                                                                                          &lt 1 RET             &kp BACKSPACE
             >;
         };
 
