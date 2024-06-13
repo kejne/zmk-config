@@ -126,11 +126,11 @@
             tapping-term-ms = <500>;
         };
 
-        hh: hh {
+        double_esc: double_esc {
             compatible = "zmk,behavior-tap-dance";
-            label = "HH";
+            label = "DOUBLE_ESC";
             #binding-cells = <0>;
-            bindings = <&kp H>, <&kp ESCAPE>;
+            bindings = <&kp COMMA>, <&kp ESCAPE>;
         };
     };
 
@@ -155,10 +155,10 @@
 
         default_layer {
             bindings = <
-&kp Q                 &kp W                 &kp E        &kp R        &kp T      &kp Y  &kp U             &kp I        &kp O                 &kp P
-&slow_mod LEFT_ALT A  &slow_mod LEFT_GUI S  &mt LCTRL D  &mt LSHFT F  &lt 2 G    &hh    &mt LEFT_SHIFT J  &mt LCTRL K  &slow_mod LEFT_GUI L  &slow_mod LEFT_ALT SEMICOLON
-&kp Z                 &kp X                 &kp C        &kp V        &kp B      &kp N  &kp M             &kp COMMA    &kp PERIOD            &kp SLASH
-&kp SPACE             &lt 1 TAB                                                                                        &lt 1 RET             &kp BACKSPACE
+&kp Q                 &kp W                 &kp E        &kp R        &kp T      &kp Y    &kp U             &kp I        &kp O                 &kp P
+&slow_mod LEFT_ALT A  &slow_mod LEFT_GUI S  &mt LCTRL D  &mt LSHFT F  &lt 2 G    &lt 2 H  &mt LEFT_SHIFT J  &mt LCTRL K  &slow_mod LEFT_GUI L  &slow_mod LEFT_ALT SEMICOLON
+&kp Z                 &kp X                 &kp C        &kp V        &kp B      &kp N    &kp M             &double_esc  &kp PERIOD            &kp SLASH
+&kp SPACE             &lt 1 TAB                                                                                          &lt 1 RET             &kp BACKSPACE
             >;
         };
 
