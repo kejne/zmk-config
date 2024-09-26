@@ -166,7 +166,7 @@
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2        &kp NUMBER_3            &kp NUMBER_4                  &kp N5           &kp NUMBER_6  &kp N7               &kp N8              &kp N9              &kp N0
 &trans        &mt LEFT_GUI GRAVE  &mt LCTRL LEFT_BRACKET  &mt LEFT_SHIFT RIGHT_BRACKET  &kp SQT          &kp LEFT      &mt LEFT_SHIFT DOWN  &mt LCTRL UP_ARROW  &mt LEFT_GUI RIGHT  &trans
-&none         &none               &kp MINUS               &kp EQUAL                     &kp BACKSLASH    &kp HOME      &kp PAGE_DOWN        &kp PAGE_UP         &kp END             &bt BT_NXT
+&caps_word    &none               &kp MINUS               &kp EQUAL                     &kp BACKSLASH    &kp HOME      &kp PAGE_DOWN        &kp PAGE_UP         &kp END             &bt BT_NXT
 &trans        &none                                                                                                                                             &none               &trans
             >;
         };
